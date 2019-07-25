@@ -1,4 +1,17 @@
 
-  $(document).ready(function() {
-    $("#myModal").modal();
-  });
+//   $(document).ready(function() {
+//     $("#myModal").modal();
+//   });
+
+    let myLibrary = [];
+
+    function Book() {
+    // the constructor...
+    }
+
+    function addBookToLibrary() {
+    // do stuff here
+    }
+    function render(){
+        
+    }  
