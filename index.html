@@ -21,8 +21,8 @@
                             <h5 class="card-title">Card title</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                            <a href="#" class="card-link">Delete Book</a>
+                            <a href="#" class="card-link">mark as read</a>
                         </div>
                     </div>
                 </div>
@@ -46,21 +46,21 @@
                 <form class= "form">
                     <div class="form-group">
                         <label for="author">Author</label>
-                        <input type="text" class="form-control" id="author" placeholder="Enter Author">
+                        <input type="text" class="form-control" id="author" placeholder="Enter Author" required>
                     </div>
                     <div class="form-group">
                         <label for="title">Title</label>
-                        <input type="text" class="form-control" id="title" placeholder="Enter Book Title">
+                        <input type="text" class="form-control" id="title" placeholder="Enter Book Title" required> 
                     </div>
                     <div class="form-group">
-                            <label for="title">NumberofPages</label>
-                            <input type="text" class="form-control" id="NumberofPages" placeholder="Enter Number of pages">
+                        <label for="title">NumberofPages</label>
+                        <input type="number" class="form-control" id="NumberofPages" placeholder="Enter Number of pages" required>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Add Book</button>
+              <button type="button" class="btn btn-primary" onclick="getFromHtml()">Add Book</button>
             </div>
           </div>
         </div>
