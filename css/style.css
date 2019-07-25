@@ -1,0 +1,16 @@
+.my-card{
+    display: inline-block !important;
+    padding: 0 !important;
+    margin-top: 5%;
+    margin-left: .2%;
+    max-width: 24.8% !important;
+}
+.card-btn{
+    margin-left: .5%;
+}
+.card-body{
+    padding: .4rem !important;
+}
+.book-area{
+    margin: auto;
+}
