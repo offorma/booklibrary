@@ -1,5 +1,5 @@
 # BookLibrary
-A website that displays news articles 
+A webapp to add books to a library and manage them
 
 ## Built With
 
@@ -12,4 +12,4 @@ Javascript, HTML & CSS
 
 
 ## Site
-* url - https://raw.githack.com/tafodinho/NewsPaper/dev/index.html
+* url - https://rawcdn.githack.com/offorma/booklibrary/eb30c4c9c266e7065ce04c70d1f0c0dbb31b0a18/index.html
