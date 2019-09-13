@@ -1,7 +1,12 @@
 
+    let myLibrary = []
 
-
-    let myLibrary = [];
+    if(localStorage.getItem("myLibrary") === null) {
+        myLibrary = [];
+    } else {
+        myLibrary = JSON.parse(localStorage.getItem("myLibrary"))
+        render()
+    }
 
     function Book() {
     }
@@ -11,6 +16,7 @@
 
     function addBookToLibrary(book) {
         myLibrary.push(book);
+        localStorage.setItem("myLibrary", JSON.stringify(myLibrary))
         getElement("input[id='author']").value = "";
         getElement("input[id='title']").value = "";
         getElement("input[id='NumberofPages']").value = "";
@@ -41,7 +47,7 @@
     function render(){
         let layout = getElement(".book-area");
         let card = "";
-        for (let i = 0; i<myLibrary.length; i++) {
+        for (let i = 0; i < myLibrary.length; i++) {
             card +=
                 "<span class='card col-lg-3 pull-left my-card'>"+
                     "<div class='card-body'>"+
@@ -72,4 +78,3 @@
     function getElement(id){
         return document.querySelector(id);
     }
-   
