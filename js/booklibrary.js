@@ -6,6 +6,8 @@
     function Book() {
     }
     Book.prototype.read = false;
+   
+
 
     function addBookToLibrary(book) {
         myLibrary.push(book);
@@ -48,7 +50,7 @@
                         "<p class='card-text'>Title: "+myLibrary[i].title+"</p>"+
                         "<p> Number of Pages <span class='badge badge-light'>"+myLibrary[i].numberOfPages+"</span></p>"+
                         "<button type='button' class='btn btn-danger' onclick='deleteBook("+i+")'>Delete Book</button>"+
-                        "<button type='button' class='btn btn-success read card-btn' onclick='markAsRead("+i+")'>Mark as Read</button>"+
+                        "<button type='button' id = 'read"+i+"' class='btn btn-success  card-btn' onclick='markAsRead("+i+")'>Mark as Read</button>"+
                     "</div>"+
                 "</span>";
         }
@@ -57,10 +59,10 @@
     function markAsRead(i){
         if (myLibrary[i].read ==false){
             myLibrary[i].read = true;
-            getElement(".read").innerHTML = "Mark as Unread";
+            getElement("#read"+i).innerHTML = "Mark as Unread";
         }else{
             myLibrary[i].read = false;
-            getElement(".read").innerHTML = "Mark as Read";
+            getElement("#read"+i).innerHTML = "Mark as Read";
         }
     }
     function deleteBook(i){
